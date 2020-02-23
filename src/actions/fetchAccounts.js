@@ -1,6 +1,6 @@
-export function fetchAccounts(action) {
+export function fetchAccounts() {
 
-    return action
+    
 
     //   fetch('http://localhost:3001/api/v1/accounts', {
     //   method: 'GET'
