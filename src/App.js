@@ -1,16 +1,17 @@
 import React from 'react';
-
+import {connect} from 'react-redux'
+import {fetchAccounts} from './actions/fetchAccounts'
 
 class App extends React.Component {
 
-  // componentDidMount(){
-  //   fetch('http://localhost:3001/api/v1/accounts', {
-  //     method: 'GET'
-  //   })
-  //   .then(response => response.json())
-  //   .then(data => console.log(data))
-  // }
 
+  
+  componentDidMount(){
+      this.props.fetchAccounts({type: 'FETCH_ACCOUNTS', payload: {name: 'Checking'}})
+
+  }
+  
+  
   render() {
   return (
     <div className="App">
@@ -20,4 +21,5 @@ class App extends React.Component {
   }
 }
 
-export default App;
+
+export default connect(null, {fetchAccounts})(App);
