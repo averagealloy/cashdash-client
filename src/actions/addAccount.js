@@ -9,5 +9,7 @@ export const addAccount = (data) => {
             method: 'POST',
             body: JSON.stringify(data)
         })
+        .then(response => response.json())
+        .then(account => dispatch({type:'ADD_ACCOUNT', payload: account}))
     }
 }
