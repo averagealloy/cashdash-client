@@ -10,7 +10,7 @@ class AccountsContainer extends React.Component {
 
 
     componentDidMount(){
-        fetchAccounts()
+        // this.props.fetchAccounts()
     }
 
     render () {
@@ -29,4 +29,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(AccountsContainer)
+export default connect(mapStateToProps, {fetchAccounts})(AccountsContainer)
