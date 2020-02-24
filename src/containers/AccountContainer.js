@@ -10,14 +10,14 @@ class AccountsContainer extends React.Component {
 
 
     componentDidMount(){
-        // this.props.fetchAccounts()
+          this.props.fetchAccounts()
     }
 
     render () {
         return (
             <div>
                 <AccountInput/>
-                <Accounts/>
+                <Accounts accounts={this.props.accounts} />
             </div>
         )
     }
@@ -25,7 +25,7 @@ class AccountsContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        // accounts: state.accounts
+         accounts: state.accounts
     }
 }
 
