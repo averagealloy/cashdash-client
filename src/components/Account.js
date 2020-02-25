@@ -18,7 +18,7 @@ return (
             {account ? account.name : null} - {account ? account.balance : null}
         </h2>
 
-    <TransactionsContainer/>
+    <TransactionsContainer account={account}/>
     </div>
 )
 
