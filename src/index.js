@@ -15,9 +15,9 @@ let store = createStore(accountReducer, composeEnhancers(applyMiddleware(thunk))
 
 ReactDOM.render(
 <Provider store={store}>
-    {/* <Router> */}
+    <Router>
         <App />
-    {/* </Router> */}
+    </Router>
 </Provider>
  ,
 document.getElementById('root'));
