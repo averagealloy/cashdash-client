@@ -9,9 +9,9 @@ const Account = (props) => {
     console.log(account)
 
 return (
-    <li>
+    <h2>
         {account ? account.name : null} - {account ? account.balance : null}
-    </li>
+    </h2>
 )
 
 
