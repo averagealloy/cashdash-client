@@ -8,6 +8,13 @@ return (dispatch) => {
             body: JSON.stringify(transaction)
         })
         .then(response => response.json())
-        .then(account => dispatch({type:'ADD_TRANSACTION', payload: account}))
+        .then(account => {
+            if (account.error){
+                alert(account.error)
+            } else {
+                dispatch({type:'ADD_TRANSACTION', payload: account})
+            }
+           }
+         )
+        }
     }
-}
