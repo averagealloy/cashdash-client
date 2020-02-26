@@ -1,5 +1,4 @@
 export const editAccount = (data) => {
-   debugger;
     return (dispatch) => {
         fetch(`http://localhost:3001/api/v1/accounts/${data.id}`,{
             headers: {
