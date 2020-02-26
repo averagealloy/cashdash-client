@@ -4,7 +4,7 @@ const Transactions = (props) => {
     return(
         <div>
             {props.transactions && props.transactions.map( transaction => 
-                <li key={transaction.id}>{transaction.kind} - {transaction.amount} - {transaction.date}</li>
+                <li key={transaction.id}>{transaction.kind} - {transaction.amount} </li>
             )}
         </div>
     )
