@@ -31,14 +31,14 @@ class AccountInput extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>    
                     <label>Checking Account Name:</label>
-                    <div className='ui input focus'>
+                    <div className='ui input'>
                         <input type='text' placeholder='Name' value={this.state.name} name='name' onChange={this.handleChange}/>
                     </div>
 
                     <br/>
 
                     <label>Checking Account Balance:</label>
-                    <div className='ui input focus'>
+                    <div className='ui input'>
                         <input type='text' placeholder='Balance' value={this.state.balance} name='balance' onChange={this.handleChange}/>
                     </div>
 
