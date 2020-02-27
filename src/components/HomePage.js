@@ -14,7 +14,7 @@ const HomePage = () => {
                 Do you want to?
             </h2>
             <div>
-                
+                {/* link to */}
                 <button className="ui primary button">Create An Account</button> 
                 OR 
                 <button className="ui primary button">Look at Accounts</button>
