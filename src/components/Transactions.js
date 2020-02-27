@@ -12,7 +12,12 @@ const handleDelete = (transaction) => {
     return(
         <div>
             {props.transactions && props.transactions.map( transaction => 
-                <li key={transaction.id}>{transaction.kind} - {transaction.amount}<button onClick={() => handleDelete(transaction)}>Delete</button> </li>
+                <ul key={transaction.id}>
+                    {transaction.kind} - {transaction.amount} <br/>
+                    <button className='ui button' onClick={() => handleDelete(transaction)}>
+                        Delete
+                    </button> 
+                </ul>
             )}
         </div>
     )
