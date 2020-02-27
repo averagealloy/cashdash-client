@@ -35,8 +35,10 @@ class TransactionInput extends React.Component {
                         <option>withdraw</option>
                     </select>
                     <label>Transaction Amount:</label>
+                    <div className="ui input focus">
                     <input type='text' name='amount' value={this.state.amount} onChange={this.handleChange}/>
-                    <input type='submit'/>
+                    </div>
+                    <input  className="ui button" type='submit'/>
                 </form>
             </div>
         )

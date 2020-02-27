@@ -32,10 +32,12 @@ class AccountEdit extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}><br/><br/>
                     <label>Update your Account Name:</label>
-                    <input type='text' placeholder='Name' value={this.state.name} name='name' onChange={this.handleChange}/><br/>
+                    <div className="ui input focus">
+                        <input type='text' placeholder='Name' value={this.state.name} name='name' onChange={this.handleChange}/><br/>
+                    </div>
                     
                     <br/>
-                    <input type='submit'/>
+                    <input className="ui button" type='submit'/>
                 </form>
             </div>
         )
