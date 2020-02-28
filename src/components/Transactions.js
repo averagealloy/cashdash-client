@@ -1,6 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteTransaction} from '../actions/deleteTransaction'
+import {Link} from 'react-router-dom'
+
 
 const Transactions = (props) => {
 
@@ -19,6 +21,11 @@ const handleDelete = (transaction) => {
                     </button> 
                 </ul>
             )}
+
+             <Link to={'/accounts'}>
+                <button className="ui primary button">Back to All Accounts</button> 
+             </Link>
+
         </div>
     )
 }
