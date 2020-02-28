@@ -44,7 +44,7 @@ class AccountInput extends React.Component {
 
                     <br/>
 
-                    <input  className='ui button' type='submit'/>
+                    <input  className='ui primary button' type='submit'/>
                 </form>
             </div>
         )
