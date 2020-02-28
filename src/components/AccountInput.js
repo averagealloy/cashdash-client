@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addAccount} from '../actions/addAccount'
-// import {Link} from 'react-router-dom'
+
 
 class AccountInput extends React.Component {
 
