@@ -23,7 +23,7 @@ const handleDelete = (transaction) => {
             )}
 
              <Link to={'/accounts'}>
-                <button className="ui primary button">Back to All Accounts</button> 
+                <button className='ui primary button'>Back to All Accounts</button> 
              </Link>
 
         </div>
