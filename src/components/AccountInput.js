@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addAccount} from '../actions/addAccount'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 class AccountInput extends React.Component {
 
@@ -20,6 +20,7 @@ class AccountInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addAccount(this.state)
+        this.props.history.push('/accounts')
         this.setState({
             name:'',
             balance: ''
@@ -44,9 +45,9 @@ class AccountInput extends React.Component {
                     </div>
 
                     <br/>
-                    <Link to={'/accounts'}>
+                    
                         <input  className='ui primary button' type='submit'/>
-                    </Link>
+                    
                 </form>
             </div>
         )
