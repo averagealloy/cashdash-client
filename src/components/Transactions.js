@@ -14,7 +14,7 @@ const handleDelete = (transaction) => {
             {props.transactions && props.transactions.map( transaction => 
                 <ul key={transaction.id}>
                     {transaction.kind} - {transaction.amount} <br/>
-                    <button className='ui button' onClick={() => handleDelete(transaction)}>
+                    <button className='ui primary button' onClick={() => handleDelete(transaction)}>
                         Delete
                     </button> 
                 </ul>
