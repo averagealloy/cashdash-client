@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addAccount} from '../actions/addAccount'
+import {Link} from 'react-router-dom'
 
 class AccountInput extends React.Component {
 
@@ -43,8 +44,9 @@ class AccountInput extends React.Component {
                     </div>
 
                     <br/>
-
-                    <input  className='ui primary button' type='submit'/>
+                    <Link to={'/accounts'}>
+                        <input  className='ui primary button' type='submit'/>
+                    </Link>
                 </form>
             </div>
         )
