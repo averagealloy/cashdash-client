@@ -6,11 +6,8 @@ import TransactionsContainer from '../containers/TransactionsContainer'
 
 const Account = (props) => {
 
-    
-    
     let account = props.accounts[props.match.params.id - 1]
-    console.log(account)
-
+    
 return (
     <div>
 

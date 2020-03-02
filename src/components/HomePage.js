@@ -17,8 +17,8 @@ const HomePage = () => {
                 
                 <Link to={'/accounts/new'}>
                 <button className='ui primary button'>Create An Account</button> 
-                </Link>
-                OR 
+                </Link> 
+                <h3> OR </h3>
                 <Link to={'/accounts'}>
                     <button className='ui primary button'>Look at Accounts</button>
                 </Link>
