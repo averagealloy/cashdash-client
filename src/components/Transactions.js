@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom'
 const Transactions = (props) => {
 
 const handleDelete = (transaction) => {
-    
     props.deleteTransaction(transaction.id, transaction.account_id)
 }
 
