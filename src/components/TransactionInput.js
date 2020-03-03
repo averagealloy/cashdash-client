@@ -31,8 +31,8 @@ class TransactionInput extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>Transaction Type:</label>
                     <select className='ui dropdown' name='kind' value={this.state.kind} onChange={this.handleChange}>
-                        <option value='1'>deposit</option>
-                        <option value='2'>withdraw</option>
+                        <option >deposit</option>
+                        <option >withdraw</option>
                     </select>
                         <label>Transaction Amount:</label>
                         <div className='ui input'>
