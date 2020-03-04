@@ -6,7 +6,6 @@ import {Provider} from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
 import accountReducer from './reducers/accountReducer'
 import Loading from './components/Loading' 
-
 import App from './App';
 
 
