@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const Accounts = (props) => {
+    console.log(props)
     return(
         <div>
             <h1>Accounts Page</h1>
