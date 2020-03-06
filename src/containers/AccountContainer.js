@@ -21,10 +21,18 @@ class AccountsContainer extends React.Component {
         return (
             <div>
                 <Switch>
+
                     <Route exact path='/loading' component={Loading}/>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/accounts/new' component={AccountInput}/>
-                    <Route exact path='/accounts/:id' render={(routerProps) => <Account {...routerProps} accounts={this.props.accounts}/>}/>
+                    <Route exact path='/accounts/:id' render={(routerProps) => {
+                        const accountId = parseInt(routerProps.match.params.id) 
+                        const account = this.props.accounts.find( acc => accountId === acc.id)
+                        return <Account {...routerProps} account={account}/>
+                            
+                    }
+                        
+                    }/>
                     <Route exact path='/accounts' render={(routerProps) => <Accounts {...routerProps} accounts={this.props.accounts}/>} />
                 </Switch>
                 
