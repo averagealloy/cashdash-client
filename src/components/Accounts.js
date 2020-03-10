@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Counter from '../components/Counter'
 const Accounts = (props) => {
     console.log(props)
     return(
@@ -9,7 +8,7 @@ const Accounts = (props) => {
             <h2>Click an account to learn more about it! </h2>
             {props.accounts.map(account => 
                 <ul key ={account.id}>
-                    <Link to={`/accounts/${account.id}`}>{account.name}</Link>  <Counter/>
+                    <Link to={`/accounts/${account.id}`}>{account.name}</Link>  
                 </ul>
             )}
              <Link to={'/'}>
